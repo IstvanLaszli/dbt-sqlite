@@ -7,11 +7,10 @@ import sqlite3
 from socket import gethostname
 from typing import Optional, Tuple, Any, Dict, List
 
-
-from dbt.adapters.base import Credentials
 from dbt.adapters.sql import SQLConnectionManager
 from dbt.contracts.connection import AdapterResponse
 from dbt.contracts.connection import Connection
+from dbt.contracts.connection import Credentials
 from dbt.exceptions import (
     DbtDatabaseError,
     FailedToConnectError,
